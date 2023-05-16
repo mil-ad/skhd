@@ -1,9 +1,7 @@
 #ifndef SKHD_TOKENIZE_H
 #define SKHD_TOKENIZE_H
 
-#define global static
-
-global const char *modifier_flags_str[] =
+static const char *modifier_flags_str[] =
 {
     "alt",   "lalt",    "ralt",
     "shift", "lshift",  "rshift",
@@ -13,7 +11,7 @@ global const char *modifier_flags_str[] =
     "rhyper","meh",
 };
 
-global const char *literal_keycode_str[] =
+static const char *literal_keycode_str[] =
 {
     "return",          "tab",             "space",
     "backspace",       "escape",          "delete",
@@ -33,8 +31,6 @@ global const char *literal_keycode_str[] =
     "rewind",          "fast",            "brightness_up",
     "brightness_down", "illumination_up", "illumination_down"
 };
-
-#undef global
 
 enum token_type
 {
